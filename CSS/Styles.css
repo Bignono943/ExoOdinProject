@@ -74,10 +74,7 @@ font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, O
 .banner-image {
     flex: 1; /* Permet à l’image de prendre l’espace restant */
     display: flex;
-    flex-direction: column;
     justify-content: center;
-    text-align: center;
-    align-items: center;
 }
 
 .banner-image img {
@@ -86,7 +83,40 @@ font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, O
     border-radius: 10px; /* Facultatif, juste pour arrondir les coins */
 }
 
-.banner-image p {
-    margin-top: 10px;
-    color: #F9FAF8;
+.information {
+    height: 25%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.information h2 {
+    font-weight: 900;
+    color: #1F2937;
+    font-size: 36px;
+ 
+}
+
+.informations-contenair {
+    display: flex;
+    justify-content: space-between;
+    margin: auto;
+    max-width: 1100px;
+    padding: 15px;
+    text-align: center;
+    gap: 20px;
+    
+}
+
+.informations-contenair img {
+    width: 200px;
+    height: 200px;
+    border-radius: 5px;
+    border: 2px solid rgb(96 139 168);
+}
+
+.informations-contenair p {
+    font-size: 13px;
+    max-width: 200px;
+    
 }
